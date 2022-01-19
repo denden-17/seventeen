@@ -1,5 +1,24 @@
-<h1>The8</h1>
-<button type="button" onclick="alert(xu minghao')">Click Me!</button>
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("user_input").value;
+    }
+  </script>
+
+  </head>
 <body>
-<p> the8 art </p>
-<img src="img_girl.jpg" alt="Girl in a dress" width="500" height="500">
+
+  <form>
+    <label><b>Enter a Message</b></label>
+    <input type="text" name="message" id="user_input">
+  </form>
+
+  <input type="submit" onclick="showInput();"><br/>
+  <label>Your input: </label>
+  <p><span id='display'></span></p>
+</body>
+</html>
